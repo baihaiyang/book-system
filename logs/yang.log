@@ -1,0 +1,19 @@
+[2019-04-13T18:13:55.187] [ERROR] cheese - Cheese id too ripe!
+[2019-04-13T18:14:18.114] [ERROR] cheese - Cheese id too ripe!
+[2019-04-13T18:15:03.322] [ERROR] cheese - Cheese id too ripe!
+[2019-04-13T18:26:39.077] [ERROR] cheese - ReferenceError: title is not defined
+    at /Users/yang/JCYD/yd-books/controllers/IndexController.js:13:17
+    at dispatch (/Users/yang/JCYD/yd-books/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/yang/JCYD/yd-books/node_modules/koa-simple-router/index.js:198:12)
+    at /Users/yang/JCYD/yd-books/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/Users/yang/JCYD/yd-books/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/yang/JCYD/yd-books/node_modules/koa-static/index.js:53:15)
+    at <anonymous>
+[2019-04-14T20:11:04.810] [ERROR] cheese - ReferenceError: title is not defined
+    at /Users/yang/JCYD/yd-books/controllers/IndexController.js:18:17
+    at dispatch (/Users/yang/JCYD/yd-books/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/yang/JCYD/yd-books/node_modules/koa-simple-router/index.js:198:12)
+    at /Users/yang/JCYD/yd-books/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/Users/yang/JCYD/yd-books/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/yang/JCYD/yd-books/node_modules/koa-static/index.js:53:15)
+    at <anonymous>
