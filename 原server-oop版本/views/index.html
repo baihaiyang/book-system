@@ -1,0 +1,32 @@
+{% extends './layout.html' %}
+{% block title %} 图书管理 {% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="/styles/index.css">
+{% endblock  %}
+{% block content %}
+  <h1>[[ title ]]</h1>
+  <a class="btn btn-default" href="/add" role="button">添加书籍</a>
+  <table class="table table-bordered">
+    <thead>
+      <th>id</th>
+      <th>书名</th>
+      <th>作者</th>
+    </thead>
+    {% for item in data %}
+      <tr>
+        <td>[[ item.id ]]</td>
+        <td>[[ item.name ]]</td>
+        <td>[[ item.author ]]</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <hr />
+  <div id="app-2">
+    <h2> {{ message }}</h2>
+    <input v-model="message" />
+  </div>
+{% endblock %}
+{% block scripts %}
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="/scripts/index.js"></script>
+{% endblock  %}

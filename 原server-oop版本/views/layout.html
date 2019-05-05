@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock  %}</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css">
+    {% block styles %}{% endblock  %}
+    <script src="scripts/yang.js"></script>
+</head>
+<body>
+    <div>
+        {% block content %}{% endblock  %}
+    </div>
+    {% block scripts %}{% endblock  %}
+
+</body>
+</html>

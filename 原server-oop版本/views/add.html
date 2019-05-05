@@ -1,0 +1,41 @@
+{% extends './layout.html' %}
+{% block title %} 添加图书 {% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="/styles/add.css">
+{% endblock  %}
+{% block content %}
+  <h1>[[ title ]]</h1>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <form method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">书名</label>
+          <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">作者</label>
+          <input type="text" name="author" class="form-control" id="exampleInputPassword1" placeholder="author">
+        </div>
+        <button type="submit" class="btn btn-default">添加</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+{% block scripts %}
+  <script type="nomodule">
+    console.log('我支持模块化😆')
+      import("/scripts/add.js").then((_) => {
+          console.log(_.default);
+          const create = new _.default;
+          create.fn();
+      });
+  </script>
+  <script type="module" src="https://cdn.bootcss.com/systemjs/3.1.2/system.js"></script>
+  <script type="module">
+    System.import("/scripts/add-bundle.js").then(_ => {
+      const create = new _.default;
+      create.fn();
+    })
+  </script>
+{% endblock  %}
